@@ -1,0 +1,128 @@
+:root {
+    /*Colors*/
+
+    /*Primry*/
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+
+    /*Neutral*/
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+
+    /*Typografhy*/
+    --PrinsipalFont: 'Red Hat Display', sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    margin: 50px auto;
+    background-color: var(--PaleBlue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 437px;
+    background-position: inherit;
+    font-family: var(--PrinsipalFont);
+    font-size: 16px;
+}
+
+.main {
+    width: 450px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.illustration img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.description {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--DarkBlue);
+}
+.description p {
+    color: var(--DesaturatedBlue);
+}
+
+
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.information p {
+    color: var(--DarkBlue);
+    font-weight: 900;
+}
+.information span {
+    color: var(--DesaturatedBlue);
+}
+.information a {
+    padding-left: 50px;
+    color: var(--BrightBlue);
+}
+.information a:hover {
+    color: var(--DesaturatedBlue);
+    text-decoration: none;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+.buttons button {
+    width: 75%;
+    margin: 40px auto 30px;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--BrightBlue);
+    font-family: var(--PrinsipalFont);
+    font-size: 15px;
+    color: var(--VeryPaleBlue);
+    box-shadow: 5px 10px 18px hsl(224, 23%, 55%);
+}
+.buttons button:hover {
+    background-color: var(--DesaturatedBlue);
+    color: var(--PaleBlue);
+    cursor: pointer;
+}
+
+.buttons a {
+    margin: 0 auto;
+    font-family: var(--PrinsipalFont);
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--DesaturatedBlue);
+    margin-bottom: 40px;
+}
+.buttons a:hover {
+    color: var(--DarkBlue);
+}
+
+@media screen and (max-width: 650px){
+    .main {
+      width: 90%;
+    }
+
+    .illustration img {
+        width: 100%;
+    }
+
+    .information {
+        display: flex;
+        gap: 25px;
+    }
+
+    .information a {
+        padding-left: 10px;
+    }
+}
